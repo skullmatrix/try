@@ -3,7 +3,8 @@ import { UnitUser, User } from "./user.interface";
 import { StatusCodes } from "http-status-codes";
 import * as database from "./user.database";
 
-export const userRouter = express.Router();
+const userRouter = express.Router();
+export default userRouter;
 
 // Get all users
 userRouter.get("/users", async (req: Request, res: Response) => {

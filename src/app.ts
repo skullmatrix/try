@@ -2,7 +2,7 @@ import express from "express"
 import * as dotevnv from "dotenv"
 import cors from "cors"
 import helmet from "helmet"
-import { userRouter } from "./users/user.routes"
+import userRouter from "./users/user.routes"
 
 dotevnv.config()
 
